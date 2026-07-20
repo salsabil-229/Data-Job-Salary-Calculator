@@ -16,7 +16,7 @@ This project is an **interactive, formula-driven Excel Dashboard & Calculator** 
 
 * **Dynamic Dropdowns:** Users can select a specific **Job Title** (e.g., Data Analyst, Data Scientist, Data Engineer) and **Country** (e.g., United States, United Kingdom, India).
 * **Instant KPI Cards:** The dashboard instantly recalculates and displays the **Number of Jobs Available**, **Median Salary ($ USD)**, and the **Top Platform to Apply**.
-* **Clean User Interface (UI):** Gridlines were removed, and structured card elements were styled using a clean corporate color palette to simulate a modern web application.
+* **Clean User Interface (UI):** Gridlines were removed, and structured card elements were styled using a clean corporate colour palette to simulate a modern web application.
 
 ---
 
@@ -73,3 +73,24 @@ To determine the best platform for a job seeker to apply on, I avoided complex f
 * **Count & Sort:** The total jobs for each platform were calculated using `COUNTIFS` and then sorted in descending order, automatically pushing the platform with the highest volume to the very top row.
 
 * **Text Cleaning:** Because the raw data outputs platforms with a prefix (e.g., "via LinkedIn"), text manipulation (substitution) was used on the top result to strip out the word "via ". This ensures only the clean, professional brand name (e.g., "LinkedIn") is fed to the dashboard's KPI card.
+
+---
+
+## Conclusion & Business Impact
+
+### Summary of Results
+This project demonstrates how raw market data can be transformed into an interactive, user-friendly decision-making tool. By leveraging dynamic array formulas (`MEDIAN` + `IF`, `COUNTIFS`, `XLOOKUP`) instead of Pivot Tables, the calculator can provide real-time, customisable market benchmarks without requiring complex data modelling software.
+
+### Who Is This Tool Useful For?
+
+1. **Data Job Seekers & Recent Graduates:**
+   * **How to benefit:** Gain salary transparency before entering job negotiations. Rather than guessing or relying on generic global averages, job seekers can input their specific role and target country to establish a  baseline salary.
+   * **Application strategy:** Use the "Top Platform to Apply" metric to prioritise daily application efforts on the specific job boards where employers actively list relevant positions.
+
+2. **Recruiters & Talent Acquisition Specialists:**
+   * **How to benefit:** Benchmark compensation packages against real-time market data to attract top-tier talent.
+   * **Application strategy:** Determine  offer ranges quickly to ensure job offers remain competitive in different geographic markets (e.g., adjusting compensation for US vs. UK remote roles).
+
+3. **HR & Compensation Analysts:**
+   * **How to benefit:** Evaluate regional pay discrepancies and monitor platform posting trends to optimise recruitment advertising spend.
+   * **Application strategy:** Identify geographical cost-of-labour differences to build equitable remote work pay scales.
